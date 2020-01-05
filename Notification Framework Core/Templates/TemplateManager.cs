@@ -79,6 +79,24 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
 
             TemplateExtension = configuration.FileExtension;
 
+            if (configuration.TemplateFolders.Count == 1 && Directory.Exists(configuration.TemplateFolders[0]) == false)
+                throw new InvalidConfigurationException($"Specified template folder '{configuration.TemplateFolders[0]}' does not exist.");
+
+            if (configuration.TemplateFolders.Count > 0)
+            {
+                foreach (var templateFolder in configuration.TemplateFolders)
+                {
+                    if (Directory.Exists(path: templateFolder))
+                    {
+                        AddTemplateFolder(path: templateFolder);
+                    }
+                    else
+                    {
+                        Logger.Warn($"Specified template folder '{templateFolder}' does not exist.  Not adding to template manager configuration.");
+                    }
+                }
+            }
+
             Logger.Debug("Template manager configured.");
 
             return this;
