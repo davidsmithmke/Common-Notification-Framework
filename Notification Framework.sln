@@ -3,9 +3,56 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification Framework Core Common", "Notification Framework Core Common\Notification Framework Core Common.csproj", "{414B06B6-564A-45D1-9442-1FA42EE9F387}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification Framework Core", "Notification Framework Core\Notification Framework Core.csproj", "{3E575E87-FA19-48CD-B6D2-18EB9A362880}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification Framework Core Bindings", "Notification Framework Core Bindings\Notification Framework Core Bindings.csproj", "{30CF9623-17A3-4451-83BD-A57F3F72C3EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Email", "Email", "{21A0F549-B32C-4807-9108-26F11CD4F7DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{92CC7A76-845A-4AFC-AB73-BE1D4BAF7D96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification Framework Email", "Notification Framework Email\Notification Framework Email.csproj", "{36F35E97-3FB9-4883-8FE1-A044359078BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification Framework Email Bindings", "Notification Framework Email Bindings\Notification Framework Email Bindings.csproj", "{B65EF335-2599-4410-9194-AD499F19A8EB}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{414B06B6-564A-45D1-9442-1FA42EE9F387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414B06B6-564A-45D1-9442-1FA42EE9F387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414B06B6-564A-45D1-9442-1FA42EE9F387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414B06B6-564A-45D1-9442-1FA42EE9F387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E575E87-FA19-48CD-B6D2-18EB9A362880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E575E87-FA19-48CD-B6D2-18EB9A362880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E575E87-FA19-48CD-B6D2-18EB9A362880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E575E87-FA19-48CD-B6D2-18EB9A362880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30CF9623-17A3-4451-83BD-A57F3F72C3EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30CF9623-17A3-4451-83BD-A57F3F72C3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30CF9623-17A3-4451-83BD-A57F3F72C3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30CF9623-17A3-4451-83BD-A57F3F72C3EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F35E97-3FB9-4883-8FE1-A044359078BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F35E97-3FB9-4883-8FE1-A044359078BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F35E97-3FB9-4883-8FE1-A044359078BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F35E97-3FB9-4883-8FE1-A044359078BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B65EF335-2599-4410-9194-AD499F19A8EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B65EF335-2599-4410-9194-AD499F19A8EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B65EF335-2599-4410-9194-AD499F19A8EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B65EF335-2599-4410-9194-AD499F19A8EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{414B06B6-564A-45D1-9442-1FA42EE9F387} = {92CC7A76-845A-4AFC-AB73-BE1D4BAF7D96}
+		{3E575E87-FA19-48CD-B6D2-18EB9A362880} = {92CC7A76-845A-4AFC-AB73-BE1D4BAF7D96}
+		{30CF9623-17A3-4451-83BD-A57F3F72C3EC} = {92CC7A76-845A-4AFC-AB73-BE1D4BAF7D96}
+		{36F35E97-3FB9-4883-8FE1-A044359078BD} = {21A0F549-B32C-4807-9108-26F11CD4F7DD}
+		{B65EF335-2599-4410-9194-AD499F19A8EB} = {21A0F549-B32C-4807-9108-26F11CD4F7DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A11CBD2-D377-45D3-A06D-F124057E31E0}

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>MountMaryUniversity.Crosscutting.Notifications.Bindings.Core</RootNamespace>
+    <AssemblyName>MountMaryUniversity.Notifications.Core.Bindings</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>David Smith</Authors>
+    <Company>Washable Software</Company>
+    <Product>Washable Software Common Notification Framework</Product>
+    <Description>Standard Ninject bindings for the core notification framework functionality</Description>
+    <Copyright>Copyright © 2019 by David Smith</Copyright>
+    <PackageTags>Notifications</PackageTags>
+    <PackageId>Washable.Notifications.Core.Bindings</PackageId>
+    <Version>0.1.0</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ninject" Version="3.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Notification Framework Core Common\Notification Framework Core Common.csproj" />
+    <ProjectReference Include="..\Notification Framework Core\Notification Framework Core.csproj" />
+  </ItemGroup>
+
+</Project>
