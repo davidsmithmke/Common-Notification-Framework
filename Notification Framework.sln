@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification Framework Core
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification Framework Core Bindings", "Notification Framework Core Bindings\Notification Framework Core Bindings.csproj", "{30CF9623-17A3-4451-83BD-A57F3F72C3EC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Email", "Email", "{21A0F549-B32C-4807-9108-26F11CD4F7DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{92CC7A76-845A-4AFC-AB73-BE1D4BAF7D96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Notification Framework Email", "Notification Framework Email\Notification Framework Email.csproj", "{36F35E97-3FB9-4883-8FE1-A044359078BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +33,19 @@ Global
 		{30CF9623-17A3-4451-83BD-A57F3F72C3EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30CF9623-17A3-4451-83BD-A57F3F72C3EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30CF9623-17A3-4451-83BD-A57F3F72C3EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F35E97-3FB9-4883-8FE1-A044359078BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F35E97-3FB9-4883-8FE1-A044359078BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F35E97-3FB9-4883-8FE1-A044359078BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F35E97-3FB9-4883-8FE1-A044359078BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{414B06B6-564A-45D1-9442-1FA42EE9F387} = {92CC7A76-845A-4AFC-AB73-BE1D4BAF7D96}
+		{3E575E87-FA19-48CD-B6D2-18EB9A362880} = {92CC7A76-845A-4AFC-AB73-BE1D4BAF7D96}
+		{30CF9623-17A3-4451-83BD-A57F3F72C3EC} = {92CC7A76-845A-4AFC-AB73-BE1D4BAF7D96}
+		{36F35E97-3FB9-4883-8FE1-A044359078BD} = {21A0F549-B32C-4807-9108-26F11CD4F7DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A11CBD2-D377-45D3-A06D-F124057E31E0}
