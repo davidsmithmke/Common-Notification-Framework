@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>MountMaryUniversity.Crosscutting.Notifications.Core</RootNamespace>
+    <AssemblyName>MountMaryUniversity.Notifications.Core.Common</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Washable.Logging.Common" Version="1.0.3" />
+  </ItemGroup>
+
+</Project>
