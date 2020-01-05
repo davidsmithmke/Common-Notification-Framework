@@ -31,6 +31,9 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
                 throw new InvalidConfigurationException("Template file extension has not been configured.");
             }
 
+            if (Directory.Exists(path) == false)
+                throw new ArgumentException($"Specified path '{path}' does not exist.", "path");
+
             // Get all subdirectories in template folder tree
             Logger.Trace("Adding root template folder {0} to configuration.", path);
             var templateFolders = new List<string>
@@ -53,7 +56,7 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
                 foreach (var file in templateFiles)
                 {
                     string templateName = Path.GetFileNameWithoutExtension(file);
-                    string templatePath = Path.Combine(path, file);
+                    string templatePath = file;
 
                     var templateText = LoadTemplateFromDisk(path: templatePath);
                     var template = Handlebars.Compile(template: templateText);
