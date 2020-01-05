@@ -4,6 +4,16 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>MountMaryUniversity.Crosscutting.Notifications.Core</RootNamespace>
     <AssemblyName>MountMaryUniversity.Notifications.Core</AssemblyName>
+    <Authors>David Smith</Authors>
+    <Company>Washable Software</Company>
+    <Copyright>Copyright © 2019 by David Smith</Copyright>
+    <Product>Washable Software Common Notification Framework</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Core functionality used by the Washable Software Notification Framework</Description>
+    <PackageTags>Notifications</PackageTags>
+    <PackageId>Washable.Notifications.Core</PackageId>
+    <Version>0.1.0</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
