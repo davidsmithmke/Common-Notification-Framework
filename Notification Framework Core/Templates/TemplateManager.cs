@@ -26,7 +26,7 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
 
         public ITemplateManager AddTemplateFolder(string path)
         {
-            Logger.Debug("Adding template folder tree with root {0} to configuration.", path);
+            Logger.Debug($"Adding template folder tree with root {path} to configuration.");
 
             if (String.IsNullOrWhiteSpace(TemplateExtension))
             {
@@ -38,7 +38,7 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
                 throw new ArgumentException($"Specified path '{path}' does not exist.", "path");
 
             // Get all subdirectories in template folder tree
-            Logger.Trace("Adding root template folder {0} to configuration.", path);
+            Logger.Trace($"Adding root template folder {path} to configuration.");
             var templateFolders = new List<string>
             {
                 path
@@ -47,7 +47,7 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
             var templateFolderSubfolders = Directory.EnumerateDirectories(path, "*", SearchOption.AllDirectories);
             foreach (var templateSubFolder in templateFolderSubfolders)
             {
-                Logger.Trace("Adding template subfolder {0} to configuration.", templateSubFolder);
+                Logger.Trace($"Adding template subfolder {templateSubFolder} to configuration.");
                 templateFolders.Add(templateSubFolder);
             }
 
@@ -55,7 +55,7 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
             foreach (var folder in templateFolders)
             {
                 // Enumerate all templates in the specified folder
-                var templateFiles = Directory.EnumerateFiles(folder, String.Format("*.{0}", TemplateExtension));
+                var templateFiles = Directory.EnumerateFiles(folder, $"*.{TemplateExtension}");
                 foreach (var file in templateFiles)
                 {
                     string templateName = Path.GetFileNameWithoutExtension(file);
@@ -66,7 +66,7 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
 
                     Templates.Add(key: templateName, value: template);
 
-                    Logger.Debug("Template {0} registered.", templateName);
+                    Logger.Debug($"Template '{templateName}' registered.");
                 }
             }
 
@@ -122,7 +122,7 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
         {
             if (File.Exists(path: path) == false)
             {
-                Logger.Error("Specified template file ({0}) does not exist.", path);
+                Logger.Error($"Specified template file ({path}) does not exist.");
                 throw new ArgumentException("Invalid template path.");
             }
 
@@ -130,7 +130,7 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
             {
                 var templateText = File.ReadAllText(path: path);
 
-                Logger.Trace("Template loaded from file {0}.", path);
+                Logger.Trace($"Template loaded from file '{path}'.");
 
                 return templateText;
             }
@@ -147,8 +147,9 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
         {
             if (IsTemplateRegistered(name: name) == false)
             {
-                Logger.Error("Template {0} is not registered with the template manager.", name);
-                throw new InvalidTemplateException(templateName: name, message: "Specified template is not registered with the template manager.");
+                var message = $"Template '{name}' is not registered with the template manager.";
+                Logger.Error(message);
+                throw new InvalidTemplateException(templateName: name, message: message);
             }
 
             return Templates[key: name](data);
