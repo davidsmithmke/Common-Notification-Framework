@@ -9,6 +9,9 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
     public class TemplateManager
         : ITemplateManager
     {
+        public const string DefaultTemplateExtension = "template";
+        public const string DefaultTemplateFolder = "NotificationTemplates";
+
         private string TemplateExtension { get; set; }
         private Dictionary<string, Func<object, string>> Templates { get; set; }
         public ILogger Logger { get; }
@@ -75,9 +78,12 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
             Logger.Trace("Beginning template manager configuration.");
 
             if (String.IsNullOrWhiteSpace(configuration.FileExtension))
-                throw new InvalidConfigurationException("Invalid template file extension specified in configuration.");
+                configuration.FileExtension = DefaultTemplateExtension;
 
             TemplateExtension = configuration.FileExtension;
+
+            if (configuration.TemplateFolders == null || configuration.TemplateFolders.Count == 0)
+                configuration.TemplateFolders = new List<string>() { DefaultTemplateFolder };
 
             if (configuration.TemplateFolders.Count == 1 && Directory.Exists(configuration.TemplateFolders[0]) == false)
                 throw new InvalidConfigurationException($"Specified template folder '{configuration.TemplateFolders[0]}' does not exist.");
