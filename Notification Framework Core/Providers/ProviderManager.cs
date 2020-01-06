@@ -54,13 +54,26 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Providers
             return provider;
         }
 
-        public INotificationProvider GetProvider(string name)
+        public INotificationProvider GetProvider(string name, bool suppressErrors = false)
         {
             INotificationProvider provider;
             var providerFound = Providers.TryGetValue(key: name, value: out provider);
 
             if (providerFound == false || provider == null)
-                Logger?.Warn($"Failed to locate provider '{name}'.");
+            {
+                if (suppressErrors == true)
+                {
+                    Logger?.Warn($"Failed to locate provider '{name}'.  Substituting null provider.");
+                    provider = new NullProvider();
+                    ((NullProvider)provider).Logger = LoggerProvider.GetLogger(targetType: typeof(NullProvider));
+                    return provider;
+                }
+                else
+                {
+                    Logger?.Fatal($"Failed to locate provider '{name}'.");
+                    throw new Exception();
+                }
+            }
 
             return provider;
         }
