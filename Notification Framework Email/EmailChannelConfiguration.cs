@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using MountMaryUniversity.Crosscutting.Notifications.Core.Providers;
 
 namespace MountMaryUniversity.Crosscutting.Notifications.Email
@@ -17,5 +18,7 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Email
         public string Subject { get; set; }
 
         public IEnumerable<string> To { get; set; }
+
+        public Type ChannelType => typeof(EmailChannel);
     }
 }
