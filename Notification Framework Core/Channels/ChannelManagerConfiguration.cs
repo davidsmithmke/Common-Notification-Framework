@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Washable.Logging.Common;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Channels
+namespace WashableSoftware.Crosscutting.Notifications.Core.Channels
 {
     public class ChannelManagerConfiguration
         : IChannelManagerConfiguration

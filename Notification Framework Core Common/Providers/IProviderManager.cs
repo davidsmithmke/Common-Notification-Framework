@@ -1,4 +1,4 @@
-﻿namespace MountMaryUniversity.Crosscutting.Notifications.Core.Providers
+﻿namespace WashableSoftware.Crosscutting.Notifications.Core.Providers
 {
     public interface IProviderManager
     {

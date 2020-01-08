@@ -1,11 +1,11 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Channels;
-using MountMaryUniversity.Crosscutting.Notifications.Core.Notifications;
-using MountMaryUniversity.Crosscutting.Notifications.Core.Templates;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Channels;
+using WashableSoftware.Crosscutting.Notifications.Core.Notifications;
+using WashableSoftware.Crosscutting.Notifications.Core.Templates;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Email
+namespace WashableSoftware.Crosscutting.Notifications.Email
 {
     public class EmailChannel
         : ChannelBase, INotificationChannel

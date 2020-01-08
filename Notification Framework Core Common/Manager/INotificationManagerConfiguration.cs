@@ -1,8 +1,8 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Channels;
-using MountMaryUniversity.Crosscutting.Notifications.Core.Providers;
-using MountMaryUniversity.Crosscutting.Notifications.Core.Templates;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Channels;
+using WashableSoftware.Crosscutting.Notifications.Core.Providers;
+using WashableSoftware.Crosscutting.Notifications.Core.Templates;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Manager
+namespace WashableSoftware.Crosscutting.Notifications.Core.Manager
 {
     public interface INotificationManagerConfiguration
     {

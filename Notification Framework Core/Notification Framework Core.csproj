@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>MountMaryUniversity.Crosscutting.Notifications.Core</RootNamespace>
-    <AssemblyName>MountMaryUniversity.Notifications.Core</AssemblyName>
+    <RootNamespace>WashableSoftware.Crosscutting.Notifications.Core</RootNamespace>
+    <AssemblyName>WashableSoftware.Notifications.Core</AssemblyName>
     <Authors>David Smith</Authors>
     <Company>Washable Software</Company>
     <Copyright>Copyright © 2019 by David Smith</Copyright>

@@ -1,6 +1,6 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Providers;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Providers;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Email
+namespace WashableSoftware.Crosscutting.Notifications.Email
 {
     public interface IEmailProviderConfiguration
         : INotificationProviderConfiguration

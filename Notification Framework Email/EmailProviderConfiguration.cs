@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Email
+namespace WashableSoftware.Crosscutting.Notifications.Email
 {
     public class EmailProviderConfiguration
         : IEmailProviderConfiguration

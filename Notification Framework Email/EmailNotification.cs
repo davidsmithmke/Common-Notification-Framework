@@ -1,7 +1,7 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Notifications;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Notifications;
 using System.Collections.Generic;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Email
+namespace WashableSoftware.Crosscutting.Notifications.Email
 {
     public class EmailNotification
         : NotificationBase, INotification

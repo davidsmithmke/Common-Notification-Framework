@@ -1,9 +1,9 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Channels;
-using MountMaryUniversity.Crosscutting.Notifications.Core.Notifications;
-using MountMaryUniversity.Crosscutting.Notifications.Core.Templates;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Channels;
+using WashableSoftware.Crosscutting.Notifications.Core.Notifications;
+using WashableSoftware.Crosscutting.Notifications.Core.Templates;
 using System;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Console
+namespace WashableSoftware.Crosscutting.Notifications.Core.Console
 {
     public class ConsoleChannel
         : ChannelBase, INotificationChannel

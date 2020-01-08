@@ -1,4 +1,4 @@
-﻿namespace MountMaryUniversity.Crosscutting.Notifications.Core.Channels
+﻿namespace WashableSoftware.Crosscutting.Notifications.Core.Channels
 {
     public interface IChannelManager
     {

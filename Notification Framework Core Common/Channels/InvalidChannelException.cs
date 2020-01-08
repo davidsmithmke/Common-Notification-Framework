@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Channels
+namespace WashableSoftware.Crosscutting.Notifications.Core.Channels
 {
     public class InvalidChannelException
         : Exception

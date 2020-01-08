@@ -1,7 +1,7 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Notifications;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Notifications;
 using System.Threading.Tasks;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Providers
+namespace WashableSoftware.Crosscutting.Notifications.Core.Providers
 {
     public interface INotificationProvider
     {

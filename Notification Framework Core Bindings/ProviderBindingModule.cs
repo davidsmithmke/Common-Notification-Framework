@@ -1,7 +1,7 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Providers;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Providers;
 using Ninject.Modules;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Bindings.Core
+namespace WashableSoftware.Crosscutting.Notifications.Bindings.Core
 {
     public class ProviderBindingModule
         : NinjectModule

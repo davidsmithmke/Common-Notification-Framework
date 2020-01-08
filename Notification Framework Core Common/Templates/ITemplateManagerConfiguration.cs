@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
+namespace WashableSoftware.Crosscutting.Notifications.Core.Templates
 {
     public interface ITemplateManagerConfiguration
     {
