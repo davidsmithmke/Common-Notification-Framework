@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Notifications
+namespace WashableSoftware.Crosscutting.Notifications.Core.Notifications
 {
     abstract public class NotificationBase
         : INotification

@@ -1,7 +1,7 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Providers;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Providers;
 using System;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Console
+namespace WashableSoftware.Crosscutting.Notifications.Core.Console
 {
     public class ConsoleChannelConfiguration
         : IConsoleChannelConfiguration

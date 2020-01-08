@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using Washable.Logging.Common;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
+namespace WashableSoftware.Crosscutting.Notifications.Core.Templates
 {
     public class TemplateManager
         : ITemplateManager

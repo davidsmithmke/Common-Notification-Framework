@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Washable.Logging.Common;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Providers
+namespace WashableSoftware.Crosscutting.Notifications.Core.Providers
 {
     public class ProviderManagerConfiguration
         : IProviderManagerConfiguration

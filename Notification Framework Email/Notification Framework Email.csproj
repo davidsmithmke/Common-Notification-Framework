@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>MountMaryUniversity.Crosscutting.Notifications.Email</RootNamespace>
-    <AssemblyName>MountMaryUniversity.Notifications.Email</AssemblyName>
+    <RootNamespace>WashableSoftware.Crosscutting.Notifications.Email</RootNamespace>
+    <AssemblyName>WashableSoftware.Notifications.Email</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>David Smith</Authors>
     <Company>Washable Software</Company>

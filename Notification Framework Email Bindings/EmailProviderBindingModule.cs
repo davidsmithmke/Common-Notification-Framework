@@ -1,8 +1,8 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Providers;
-using MountMaryUniversity.Crosscutting.Notifications.Email;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Providers;
+using WashableSoftware.Crosscutting.Notifications.Email;
 using Ninject.Modules;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Bindings.Email
+namespace WashableSoftware.Crosscutting.Notifications.Bindings.Email
 {
     public class EmailProviderBindingModule
         : NinjectModule

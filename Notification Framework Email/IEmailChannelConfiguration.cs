@@ -1,7 +1,7 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Channels;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Channels;
 using System.Collections.Generic;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Email
+namespace WashableSoftware.Crosscutting.Notifications.Email
 {
     public interface IEmailChannelConfiguration
         : INotificationChannelConfiguration

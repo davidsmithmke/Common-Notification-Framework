@@ -1,11 +1,11 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Notifications;
-using MountMaryUniversity.Crosscutting.Notifications.Core.Providers;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Notifications;
+using WashableSoftware.Crosscutting.Notifications.Core.Providers;
 using System;
 using System.Net.Mail;
 using System.Threading.Tasks;
 using Washable.Logging.Common;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Email
+namespace WashableSoftware.Crosscutting.Notifications.Email
 {
     public class EmailProvider
         : ProviderBase, INotificationProvider

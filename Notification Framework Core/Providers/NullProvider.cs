@@ -1,8 +1,8 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Notifications;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Notifications;
 using System.Threading.Tasks;
 using Washable.Logging.Common;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Providers
+namespace WashableSoftware.Crosscutting.Notifications.Core.Providers
 {
     public class NullProvider
         : INotificationProvider

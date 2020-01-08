@@ -1,8 +1,8 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Channels;
-using MountMaryUniversity.Crosscutting.Notifications.Core.Notifications;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Channels;
+using WashableSoftware.Crosscutting.Notifications.Core.Notifications;
 using System.Threading.Tasks;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Manager
+namespace WashableSoftware.Crosscutting.Notifications.Core.Manager
 {
     public interface INotificationManager
     {

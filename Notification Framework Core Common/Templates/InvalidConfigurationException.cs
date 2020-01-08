@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Templates
+namespace WashableSoftware.Crosscutting.Notifications.Core.Templates
 {
     public class InvalidConfigurationException
         : Exception

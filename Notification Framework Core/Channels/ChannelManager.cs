@@ -1,9 +1,9 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Templates;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Templates;
 using System;
 using System.Collections.Generic;
 using Washable.Logging.Common;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Channels
+namespace WashableSoftware.Crosscutting.Notifications.Core.Channels
 {
     public class ChannelManager
         : IChannelManager

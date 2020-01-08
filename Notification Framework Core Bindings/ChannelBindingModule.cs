@@ -1,7 +1,7 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Channels;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Channels;
 using Ninject.Modules;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Bindings.Core
+namespace WashableSoftware.Crosscutting.Notifications.Bindings.Core
 {
     public class ChannelBindingModule
         : NinjectModule

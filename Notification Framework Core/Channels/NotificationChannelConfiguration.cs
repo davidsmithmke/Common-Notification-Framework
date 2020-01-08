@@ -1,7 +1,7 @@
-﻿using MountMaryUniversity.Crosscutting.Notifications.Core.Providers;
+﻿using WashableSoftware.Crosscutting.Notifications.Core.Providers;
 using System;
 
-namespace MountMaryUniversity.Crosscutting.Notifications.Core.Channels
+namespace WashableSoftware.Crosscutting.Notifications.Core.Channels
 {
     public class NotificationChannelConfiguration
         : INotificationChannelConfiguration
