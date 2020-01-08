@@ -10,6 +10,10 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Email
     public class EmailProvider
         : ProviderBase, INotificationProvider
     {
+        public EmailProvider()
+            : base()
+        { }
+
         public EmailProvider(ILogger logger)
             : base(logger: logger) { }
 

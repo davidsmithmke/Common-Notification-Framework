@@ -8,6 +8,9 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Providers
     abstract public class ProviderBase
         : INotificationProvider
     {
+        public ProviderBase()
+        { }
+
         public ProviderBase(ILogger logger)
         {
             Logger = logger;
@@ -32,7 +35,7 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Providers
             return this;
         }
 
-        public ILogger Logger { get; }
+        public ILogger Logger { get; set; }
 
         public string Name { get; private set; }
 

@@ -8,6 +8,10 @@ namespace MountMaryUniversity.Crosscutting.Notifications.Core.Console
     public class ConsoleProvider
         : ProviderBase, INotificationProvider
     {
+        public ConsoleProvider()
+            : base()
+        { }
+
         public ConsoleProvider(ILogger logger)
             : base(logger: logger) { }
 
