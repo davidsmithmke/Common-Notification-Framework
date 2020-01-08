@@ -1,4 +1,6 @@
-﻿namespace MountMaryUniversity.Crosscutting.Notifications.Email
+﻿using System;
+
+namespace MountMaryUniversity.Crosscutting.Notifications.Email
 {
     public class EmailProviderConfiguration
         : IEmailProviderConfiguration
@@ -20,5 +22,7 @@
         public int SmtpServerPort { get; set; }
 
         public bool SmtpEnableSsl { get; set; }
+
+        public Type ProviderType => typeof(EmailProvider);
     }
 }
